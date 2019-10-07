@@ -4,6 +4,7 @@ public class InsertionSort {
     public static void main(String[] args) {
         int[] intArray = {20, -22, 35, -15, 7, 55, 1};
 
+        long startTime = System.nanoTime();
         for (int lastUnsortedIndex = 1; lastUnsortedIndex < intArray.length; lastUnsortedIndex++) {
             int newElement = intArray[lastUnsortedIndex];
             int i = lastUnsortedIndex;
@@ -12,7 +13,8 @@ public class InsertionSort {
             }
             intArray[i] = newElement;
         }
-
+        long endTime = System.nanoTime();
+        System.out.println("Time taken by this algorithm :"+ (endTime-startTime));
         printArray(intArray);
     }
 
