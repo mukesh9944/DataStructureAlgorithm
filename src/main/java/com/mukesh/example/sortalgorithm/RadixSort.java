@@ -23,14 +23,14 @@ public class RadixSort {
             countArray[getDigit(position, value, radix)]++;
         }
 
-        for (int i = 0; i < radix; i++) {
+        for (int i = 1; i < radix; i++) {
             countArray[i] += countArray[i - 1];
         }
 
         int[] tempArray = new int[numItem];
 
         for (int tempIndex = numItem - 1; tempIndex >= 0; tempIndex--) {
-            tempArray[--countArray[getDigit(tempIndex, intArray[tempIndex], radix)]] = intArray[tempIndex];
+            tempArray[--countArray[getDigit(position, intArray[tempIndex], radix)]] = intArray[tempIndex];
         }
 
         for (int i = 0; i < numItem; i++) {
