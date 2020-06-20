@@ -44,7 +44,7 @@ public class QuickSort {
 
     private static void printArray(int[] intArray) {
         for (int i : intArray) {
-            System.out.println(i);
+            System.out.print(i + " ");
         }
     }
 }
