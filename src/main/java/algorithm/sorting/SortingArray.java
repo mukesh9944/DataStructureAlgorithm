@@ -1,4 +1,4 @@
-package com.mukesh.example.sortalgorithm;
+package algorithm.sorting;
 
 import java.util.Arrays;
 

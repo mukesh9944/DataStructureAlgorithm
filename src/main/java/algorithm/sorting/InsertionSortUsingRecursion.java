@@ -1,4 +1,4 @@
-package com.mukesh.example.sortalgorithm;
+package algorithm.sorting;
 
 public class InsertionSortUsingRecursion {
     public static void main(String[] args) {

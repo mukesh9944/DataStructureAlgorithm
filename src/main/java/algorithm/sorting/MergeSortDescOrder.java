@@ -1,6 +1,6 @@
-package com.mukesh.example.sortalgorithm;
+package algorithm.sorting;
 
-public class MergeSort {
+public class MergeSortDescOrder {
     public static void main(String[] args) {
         int[] intArray = {20, -22, 35, -15, 7, 55, 1};
 
@@ -24,7 +24,7 @@ public class MergeSort {
 
     private static void merge(int[] intArray, int start, int mid, int end) {
 
-        if (intArray[mid - 1] <= intArray[mid]) {
+        if (intArray[mid - 1] >= intArray[mid]) {
             return;
         }
 
@@ -34,7 +34,7 @@ public class MergeSort {
         int[] temp = new int[end - start];
 
         while (i < mid && j < end) {
-            temp[tempIndex++] = intArray[i] <= intArray[j] ? intArray[i++] : intArray[j++];
+            temp[tempIndex++] = intArray[i] >= intArray[j] ? intArray[i++] : intArray[j++];
         }
 
         System.arraycopy(intArray, i, intArray, start + tempIndex, mid - i);

@@ -1,4 +1,4 @@
-package com.mukesh.example.recursion;
+package algorithm.recursion;
 
 public class Recursion {
     public static void main(String[] args) {

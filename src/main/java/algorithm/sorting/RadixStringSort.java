@@ -1,4 +1,4 @@
-package com.mukesh.example.sortalgorithm;
+package algorithm.sorting;
 
 public class RadixStringSort {
     public static void main(String[] args) {

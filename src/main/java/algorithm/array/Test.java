@@ -1,4 +1,4 @@
-package com.mukesh.example.array;
+package algorithm.array;
 
 public class Test {
 
