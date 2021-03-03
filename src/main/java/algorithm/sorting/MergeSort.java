@@ -1,5 +1,9 @@
 package algorithm.sorting;
 
+/**
+ * Merge sort
+ * Time complexity Divide - O(logn) * merge - O(n) = O(nlogn)
+ */
 public class MergeSort {
     public static void main(String[] args) {
         int[] intArray = {20, -22, 35, -15, 7, 55, 1};

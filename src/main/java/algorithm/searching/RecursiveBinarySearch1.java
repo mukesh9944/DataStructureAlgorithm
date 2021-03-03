@@ -1,13 +1,13 @@
 package algorithm.searching;
 
 
-public class RecursiveBinarySearchNew {
+public class RecursiveBinarySearch1 {
     public static void main(String[] args) {
         int[] array = {2, 3, 4, 5, 6, 7, 8, 9, 10};
         int key = 11;
         int low = 0;
         int high = array.length - 1;
-        RecursiveBinarySearchNew bs = new RecursiveBinarySearchNew();
+        RecursiveBinarySearch1 bs = new RecursiveBinarySearch1();
         int pos = bs.binarySearch(array, key, low, high);
         if(pos == -1){
             System.out.println("Key is not found");
